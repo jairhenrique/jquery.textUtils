@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery.textUtils Test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script src="../qunit/qunit/qunit.js"></script>
+    <script src="../jquery.textUtils.js"></script>    
+    <link rel="stylesheet" href="../qunit/qunit/qunit.css" />
+</head>
+<body>
+    <h1 id="qunit-header">jquery.textUtils - Tests</h1>
+    <h2 id="qunit-banner"></h2>
+    <div id="qunit-testrunner-toolbar"></div>
+    <h2 id="qunit-userAgent"></h2>
+    <ol id="qunit-tests"></ol>
+    <div id="qunit-fixture">test markup, will be hidden</div>
+</body>
+<script>
+test("test removeAccents without parameters", function() {
+    equals( "Joao foi para o Japao", $.removeAccents("João foi para o Japão"), "João foi para o Japão");
+    equals( "Pele", $.removeAccents("Pelé"), "Pelé");
+});
+</script>
+</html>
