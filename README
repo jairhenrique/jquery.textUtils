@@ -1,6 +1,5 @@
 - Unit testing
-	- QUnit ?
-	- JsUnit ?
+	- Tests with qUnit (git submodule update --init)
 
 - Documentation
 	- JSDoc
